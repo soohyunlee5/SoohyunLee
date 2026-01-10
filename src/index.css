@@ -1,2 +1,17 @@
 @import "tailwindcss";
 
+@layer components {
+    .underline-effect {
+        @apply 
+            absolute bottom-0 left-0 w-full h-0.5 
+            scale-x-0 origin-right 
+            bg-current 
+            transition-transform duration-300 
+            group-hover:scale-x-100 
+            group-hover:origin-left;
+    }
+}
+
+body {
+    font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+}
